@@ -1,0 +1,10 @@
+deploy:deploying file
+
+-DgroupId=com.month
+-DartifactId=month
+-Dversion=1.0-SNAPSHOT
+-DgeneratePom=false
+-Dpackaging=war
+-Drepository=nexus
+-Durl=https://nexus-tb/repository/nexus-smoe-pro
+-Dfile=war/1.0-SNAPSHOT

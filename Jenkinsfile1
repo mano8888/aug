@@ -1,0 +1,24 @@
+pipeline{
+     agent any
+
+   stages{
+
+stage ('scm package & mvn build'){
+step{
+sh "git clone https://github.com/mano8888/aug.git"
+sh "mvn clean -f aug.git"
+  }
+    }
+
+stage ('test'){
+step{
+ sh "mvn test"
+  }
+    }
+stage ('deploy')
+step{
+sh "mvn package"
+  }
+    }
+      }
+        }

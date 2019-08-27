@@ -1,0 +1,8 @@
+# required metadata
+
+sonar.project.key=mano
+sonar.project.name=sonar.mano
+sonar.project.version=mano
+
+# path to source directories
+sonar.source=/var/log/$job_name/src=mano
